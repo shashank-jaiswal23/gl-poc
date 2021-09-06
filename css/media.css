@@ -1,140 +1,127 @@
 /* All media Querries */
 
-@media (max-width: 376px){
-    .combine{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    header{
-        height: auto;
-    }
-    form{
-        max-width: 300px;
-        margin-left: 12%;
-        margin-top:450px;
-    }
-    button{
-        margin-left: 65px;
-        padding: 10px 20px 10px 20px;
-    }
-    .wholetext{
-        max-width: 350px;
-        margin-left: 25px;
-        margin-bottom: 30%;
-    }
-    .ptext{
-        font-size: 20px;
-    }
+@media (max-width: 376px) {
+  .combine {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header {
+    height: auto;
+  }
+  form {
+    max-width: 300px;
+    margin-left: 12%;
+    margin-top: 450px;
+  }
+  button {
+    margin-left: 65px;
+    padding: 10px 20px 10px 20px;
+  }
+  .wholetext {
+    max-width: 350px;
+    margin-left: 25px;
+    margin-bottom: 30%;
+  }
+  .ptext {
+    font-size: 20px;
+  }
 
-    .tag1 h1{
-        margin-top: 70px;
-        font-size: 30px;
-    }
+  .tag1 h1 {
+    margin-top: 70px;
+    font-size: 30px;
+  }
 
-    .imgv img{
-        max-width: 350px;
-        height:auto;
-    }
+  .imgv img {
+    max-width: 350px;
+    height: auto;
+  }
 
-    .allsvg{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .curriculum{
-        margin-top: -200px;
-        height: auto;
-    }
-    .tag2 h1{
-        font-size: 30px;
-    }
-    .box{
-        max-width: 350px;
-        height: 300px;
-        margin-bottom: 100px;
-    }
-    .box h1{
-        padding-top: 13px;
-        padding-bottom: 13px;
-        font-size: 15px;
-    }
-    .box h1 i{
-        margin-left: 250px;
-    }
-    .fbox{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .all p{
-        margin-left: 40px;
-    }
+  .allsvg {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .curriculum {
+    margin-top: -200px;
+    margin-bottom: 100px;
+    height: auto;
+  }
+  .accordion {
+    width: 300px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+  }
+  .all p {
+    margin-left: 40px;
+  }
 
-    .photo img{
-        max-width: 300px;
-        margin-left: 50px;
-    }
-    .tick{
-        margin-top: 20px;
-    }
-    .tick img{
-        margin-left: 15px;
-    }
-    .tick p{
-        width: 300px;
-    }
-    .prev{
-        visibility: hidden;
-    }
-    .next{
-        visibility: hidden;
-    }
-    .mySlides{
-        margin-top: -50px;
-        width: 450px;
-        margin-left: -220px;
-    }
+  .photo img {
+    max-width: 300px;
+    margin-left: 50px;
+  }
+  .tick {
+    margin-top: 20px;
+  }
+  .tick img {
+    margin-left: 15px;
+  }
+  .tick p {
+    width: 300px;
+  }
+  .prev {
+    visibility: hidden;
+  }
+  .next {
+    visibility: hidden;
+  }
+  .mySlides {
+    margin-top: -50px;
+    width: 450px;
+    margin-left: -220px;
+  }
 
-    .mySlides h1{
-        visibility: hidden;
-    }
-    .dot-container{
-        display: flex;
-        justify-content: center;
-        margin-top: -280px;
-        margin-bottom: 50px;
-    }
-    .dot {
-        opacity: 99999;
-        visibility: visible;
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
+  .mySlides h1 {
+    visibility: hidden;
+  }
+  .dot-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -280px;
+    margin-bottom: 50px;
+  }
+  .dot {
+    opacity: 99999;
+    visibility: visible;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-    .before_foot{
-        max-width: 375px;
-        margin-bottom: 20px;
-    }
-    .before_foot h4{
-        max-width: 300px;
-    }
-    footer h4{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .finalbut{
-        align-items: center;
-        margin-left: -60px;
-        margin-bottom: 20px;
-    }
-    footer{
-        max-width: 375px;
-    }
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  .before_foot {
+    max-width: 375px;
+    margin-bottom: 20px;
+  }
+  .before_foot h4 {
+    max-width: 300px;
+  }
+  footer h4 {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .finalbut {
+    align-items: center;
+    margin-left: -60px;
+    margin-bottom: 20px;
+  }
+  footer {
+    max-width: 375px;
+  }
 }

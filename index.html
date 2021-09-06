@@ -21,54 +21,55 @@
             <img src="assets/gl-logo-white.png" alt="#">
         </div>
         <div class="combine">
-        <div class="wholetext">
-            <div class="h1text">
-                <h1>PG Program in</h1>
-                <h1>Data Science and Business Analytics</h1>
-            </div>
-            <div class="hrw">
-                <hr width="1" size="70">
-                <div class="ptext">
-                    <p>Learn Data Science, Business Analytics with India's #1</p>
-                    <p>course and power ahead in your career</p>
+            <div class="wholetext">
+                <div class="h1text">
+                    <h1>PG Program in</h1>
+                    <h1>Data Science and Business Analytics</h1>
+                </div>
+                <div class="hrw">
+                    <hr width="1" size="70">
+                    <div class="ptext">
+                        <p>Learn Data Science, Business Analytics with India's #1</p>
+                        <p>course and power ahead in your career</p>
+                    </div>
+                </div>
+                <div class="h2text">
+                    <h2>11 Months | Online Mentorship</h2>
                 </div>
             </div>
-            <div class="h2text">
-                <h2>11 Months | Online Mentorship</h2>
-            </div>
-        </div>
 
-        <!-- ************card div starts************** -->
-        <div class="formmm">
-            <form action="">
-                <h1>Get Started Now</h1>
-                <div class="line"></div><br>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="number" placeholder="Mobile No." required>
-                <input type="text" placeholder="Work Experience" required>
-                <select id="job" name="user_job">
-                    <option value="frontend_developer">Current orgnization</option>
-                    <option value="php_developer">PHP Developer</option>
-                    <option value="python_developer">Python Developer</option>
-                    <option value="rails_developer">Rails Developer</option>
-                    <option value="web_designer">Web Designer</option>
-                    <option value="wordpress_developer">Wordpress Developer</option>
-                </select>
-                <div class="wholecheck">
-                    <div class="check">
-                        <input type="checkbox">
+            <!-- ************card div starts************** -->
+            <div class="formmm">
+                <div id="error_message"></div>
+                <form action="" id="myform" onsubmit="return validate();">
+                    <h1>Get Started Now</h1>
+                    <div class="line"></div><br>
+                    <input type="text" placeholder="Name" id="name" name="name">
+                    <input type="email" placeholder="Email" id="email" name="email">
+                    <input type="number" placeholder="Mobile No." id="contact" name="contact">
+                    <input type="text" placeholder="Work Experience" id="experience" name="experience">
+                    <select id="job" name="user_job" id="current" name="current">
+                        <option value="frontend_developer">Current orgnization</option>
+                        <option value="php_developer">PHP Developer</option>
+                        <option value="python_developer">Python Developer</option>
+                        <option value="rails_developer">Rails Developer</option>
+                        <option value="web_designer">Web Designer</option>
+                        <option value="wordpress_developer">Wordpress Developer</option>
+                    </select>
+                    <div class="wholecheck">
+                        <div class="check">
+                            <input type="checkbox">
+                        </div>
+                        <div class="clabel">
+                            <label class="light">I authorize a Great Learning representative to contact me about my
+                                interest
+                                in
+                                the program</label> <br><br>
+                        </div>
                     </div>
-                    <div class="clabel">
-                        <label class="light">I authorize a Great Learning representative to contact me about my
-                            interest
-                            in
-                            the program</label> <br><br>
-                    </div>
-                </div>
-                <button type="submit">Apply Now</button>
-            </form>
-        </div>
+                    <button type="submit" onclick="return store()">Apply Now</button>
+                </form>
+            </div>
         </div>
         <!-- ************card div ends************** -->
     </header>
@@ -109,13 +110,42 @@
             <h1>CURRICULUM SNAPSHOT</h1>
             <div class="line3"></div><br>
         </div>
-        <div class="mainbox">
-            <div class="box">
-                <h1>Introduction to Data Science <i class="fa fa-plus" aria-hidden="true"></i></h1>
-                <h1>Business Finance <i class="fa fa-plus" aria-hidden="true"></i></h1>
-                <h1>Marketing and CRM <i class="fa fa-plus" aria-hidden="true"></i></h1>
-                <h1>SQL Programming <i class="fa fa-plus" aria-hidden="true"></i></h1>
-                <h1>Advance Statistics <i class="fa fa-plus" aria-hidden="true"></i></h1>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Introduction to Data Science</div>
+                <div class="content">
+                    <p>This is an interdisciplinary field, and the foundations of data science include statistics, inference, computer science, predictive analytics, machine learning algorithm development, and new technologies to gain insights from big data. ... Data processing follows, and constitutes one of the data science fundamentals</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">Business Finance</div>
+                <div class="content">
+                    <p>Business finance refers to funds availed by business owners to meet their needs that may include commencing a business, obtaining top-up funds to finance business operations, obtaining finance to purchase capital assets for the business, or to deal with a sudden cash crunch faced by the business.
+                    </p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">Marketing and CRM</div>
+                <div class="content">
+                    <p>What is CRM Marketing? Customer relationship management (CRM) marketing is a term referring to the strategies and
+                    tactics, as well as to the technologies supporting the execution of said strategies and tactics, marketers use in order to manage the relationship with their customers throughout the customer lifecycle.
+                    </p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">SQL Programming</div>
+                <div class="content">
+                    <p>What is SQL? SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database. SQL is the standard language for Relational Database System.
+                    </p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">Advance Statistics</div>
+                <div class="content">
+                    <p>Advanced statistics are the mathematical tools used to discover and explore complex relationships between different
+                    variables in large datasets.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -176,28 +206,46 @@
                     project at work, and my boss has already asked me to make a similar prototype for another project. I
                     also feel like if I ever were to try starting my own company that my chances of success just went up
                     a lot. <span><i class="fa fa-quote-right fa-2x"></i></span></p>
-                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development <br>
-                    (Software Industry)</h1>
+                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development
+                    <br>
+                    (Software Industry)
+                </h1>
             </div>
 
             <div class="mySlides">
-                <p><span><i class="fa fa-quote-left fa-2x"></i></span> have already used this on one
-                    project at work, and
-                    my boss has already asked me to make a similar prototype for another project. I also feel like if I
-                    ever were to try
-                    starting my own company that my chances of success just went up a lot. <span><i class="fa fa-quote-right fa-2x"></i></span></p>
-                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development <br>
-                    (Software Industry)</h1>
+                <p><span><i class="fa fa-quote-left fa-2x"></i></span> Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    <span><i class="fa fa-quote-right fa-2x"></i></span>
+                </p>
+                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development
+                    <br>
+                    (Software Industry)
+                </h1>
             </div>
 
             <div class="mySlides">
-                <p><span><i class="fa fa-quote-left fa-2x"></i></span> have already used this on one
-                    project at work, and
-                    my boss has already asked me to make a similar prototype for another project. I also feel like if I
-                    ever were to try
-                    starting my own company that my chances of success just went up a lot. <span><i class="fa fa-quote-right fa-2x"></i></span></p>
-                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development <br>
-                    (Software Industry)</h1>
+                <p><span><i class="fa fa-quote-left fa-2x"></i></span> It is a long established fact that a reader will
+                    be distracted by the readable content of a page when looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                    as opposed to using
+                    'Content here, content here', making it look like readable English. Many desktop publishing packages
+                    and web page
+                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                    many web sites
+                    still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                    sometimes on purpose
+                    (injected humour and the like). <span><i class="fa fa-quote-right fa-2x"></i></span></p>
+                <h1 class="author" style="margin-top: 50px; margin-left: 450px;">- Senior Director,Business Development
+                    <br>
+                    (Software Industry)
+                </h1>
             </div>
 
             <!-- Next/prev buttons -->
@@ -214,7 +262,10 @@
     <section class="before_foot">
         <div class="intext">
             <h3>
-                Great Learning is an Ed-Tech Company that offers programs in career critical competencies such as Analytics, Data Science, Artificial Intelligence, Cloud Computing, CyberSecurity, Full Stack Development and much more. Over 10000 professionals have taken Great Learning programs and it has already delivered over 5 million hours of learning.
+                Great Learning is an Ed-Tech Company that offers programs in career critical competencies such as
+                Analytics, Data Science, Artificial Intelligence, Cloud Computing, CyberSecurity, Full Stack Development
+                and much more. Over 10000 professionals have taken Great Learning programs and it has already delivered
+                over 5 million hours of learning.
             </h3>
         </div>
     </section>
